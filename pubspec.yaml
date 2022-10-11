@@ -1,5 +1,5 @@
 name: movies
-description: Projet Movies 2022-2023
+description: Projet "Movies" 2022-2023
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -20,53 +20,35 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.17.6 <3.0.0"
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  http: ^0.13.4
-  percent_indicator: ^3.0.1
+  email_validator: ^2.1.17
+  http: ^0.13.5
+  percent_indicator: ^4.2.2
   intl: ^0.17.0
-  firebase_core: ^1.4.0
-  firebase_auth: ^3.3.3
-  cloud_firestore: ^3.1.4
-  firebase_storage: ^10.2.3
-  email_validator: ^2.0.1
-  sliding_up_panel: ^2.0.0+1
-  image_picker: ^0.8.5+3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
 flutter:
-  assets:
-    - assets/img/
-    - assets/icons/
   uses-material-design: true
+  assets:
+    - assets/img/actor_placeholder.jpg
+    - assets/img/profile.jpg
+    - assets/icons/icon-logout.png
+    - assets/icons/icon-sidebar.png
   fonts:
-    - family: main
+    - family: Avenir
       fonts:
-        - asset: assets/fonts/SFProText-Regular.ttf
-        - asset: assets/fonts/SFProText-Bold.ttf
+        - asset: assets/fonts/AvenirLTStd-Black.otf
+          weight: 800
+        - asset: assets/fonts/AvenirLTStd-Heavy.otf
           weight: 700
-        - asset: assets/fonts/SFProText-Semi-bold.ttf
-          weight: 500
-
+        - asset: assets/fonts/AvenirLTStd-Light.otf
+        - asset: assets/fonts/AvenirLTStd-Roman.otf
+          weight: 400
